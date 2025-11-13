@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Laptop - Cealtech</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+
+  <!-- Banner -->
+  <div class="banner" style="background-image: url('../assets/img/banner.png');"></div>
+<!-- ====== NAVEGACIÓN ====== -->
+  <nav>
+    <a href="../index.html" class="btn">Inicio</a>
+    <a href="oficina.html" class="btn">Laptops de Oficina</a>
+    <a href="convertible.html" class="btn">Laptops Convertibles</a>
+    <a href="gamer.html" class="btn">Laptops Gamer</a>
+  </nav>
+
+
+  <!-- Contenedor principal -->
+  <div class="detalle-container">
+    <!-- Galería de imágenes -->
+    <div class="galeria">
+      <div class="miniaturas" id="thumbnails"></div>
+      <div class="imagen-principal">
+        <img id="imagenPrincipal" src="" alt="Laptop principal">
+      </div>
+    </div>
+
+    <!-- Información del producto -->
+    <div class="info-laptop">
+      <h2 id="laptopTitle">Cargando...</h2>
+      <p class="marca" id="laptopMarca"></p>
+
+      <div class="precio">
+        <p class="precio-anterior" id="precioAnterior"></p>
+        <p class="precio-actual" id="precioActual"></p>
+      </div>
+
+      <ul class="caracteristicas" id="laptopSpecs"></ul>
+
+      <a id="btnWhatsapp" href="#" class="btn" target="_blank">Contactar por WhatsApp</a>
+    </div>
+  </div>
+
+  
+  <script src="../assets/js/laptop.js"></script>
+</body>
+</html>

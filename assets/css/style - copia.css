@@ -1,0 +1,289 @@
+/* ==== ESTILOS PRINCIPALES CEALTECH ==== */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 30px; /* 🔹 Espacio lateral visible en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px; /* 🔹 Menor espacio en móviles */
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+  }
+}
+
+/* ==== NAVBAR ==== */
+nav {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ==== BOTONES ==== */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  padding: 4px 55px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: skewX(-20deg);
+  transition: left 0.4s ease;
+}
+
+.btn:hover::after {
+  left: 120%;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* ==== CONTENEDOR GENERAL ==== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* ==== TARJETAS ==== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* ==== BOTÓN WHATSAPP FLOTANTE ==== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* ==== CATEGORÍAS ==== */
+.categorias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.categoria {
+  flex: 1 1 30%;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.categoria img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.categoria h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.categoria:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ==== GRID DE LAPTOPS ==== */
+.laptops-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* 🔹 4 columnas en PC */
+  gap: 25px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.laptop-card {
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  max-width: 270px; /* 🔹 ancho reducido */
+}
+
+.laptop-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.laptop-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.laptop-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.laptop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ==== DETALLE DE LAPTOP ==== */
+.laptop-detail {
+  text-align: left;
+}
+
+.laptop-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.laptop-images #img-main {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.img-thumbs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-thumbs img {
+  width: 80px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.img-thumbs img:hover {
+  transform: scale(1.1);
+}
+
+.laptop-info {
+  margin-top: 20px;
+}
+
+.laptop-info p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Botón de WhatsApp dentro de detalle */
+.whatsapp-btn {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 1024px) {
+  .laptops-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .laptops-container {
+    grid-template-columns: 1fr 1fr; /* 🔹 2 columnas en móvil */
+  }
+  .laptop-card {
+    max-width: 100%;
+  }
+}
+
+

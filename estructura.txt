@@ -1,0 +1,38 @@
+web-cealtech/
+├── index.html
+├── productos/
+│   ├── gamer/
+│   │      ├── gamer1/
+│   │      │           ├── gamer1-1.jpg 
+│   │      │           ├── gamer1-2.jpg
+│   │      │           ├── gamer1-3.jpg
+│   │      │           ├── gamer1-4.jpg
+│   │      ├── gamer2/
+│   │      │           ├── gamer2-1.jpg 
+│   │      │           ├── gamer2-2.jpg
+│   │      │           ├── gamer2-3.jpg
+│   │      │           ├── gamer2-4.jpg
+│   │      └── gamer3/ 
+│   ├── oficina/
+            ├── oficina1/
+│   │      │           ├── oficina1-1.jpg 
+│   │      │           ├── oficina1-2.jpg
+│   │      │           ├── oficina1-3.jpg
+│   │      │           ├── oficina1-4.jpg
+│   │      ├── oficina2/
+│   │      │           ├── oficina2-1.jpg 
+│   │      │           ├── oficina2-2.jpg
+│   │      │           ├── oficina2-3.jpg
+│   │      │           ├── oficina2-4.jpg
+│   │      └── oficina3/ 
+
+│   └── convertibles/
+│   └──gamer.html
+│   └──convertible.html
+│   └──oficina.html
+│   └──laptop.html
+├── assets/
+│   ├── css/style.css
+│   ├── js/laptop.js
+│   └── img/banner.png
+└── contacto/
