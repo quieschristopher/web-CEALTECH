@@ -5,13 +5,16 @@ backend:
   auth_type: implicit
   base_url: "/.netlify/functions/github-oauth"
 
+site_url: "https://cealtech.netlify.app"
+display_url: "https://cealtech.netlify.app"
+
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
 media_library:
   name: uploadcare
   config:
-    publicKey: "demopublickey" # No afecta en nada, evita error del schema
+    publicKey: "demopublickey"
 
 collections:
   - name: "pagina_principal"
