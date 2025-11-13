@@ -8,6 +8,11 @@ backend:
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: "demopublickey" # No afecta en nada, evita error del schema
+
 collections:
   - name: "pagina_principal"
     label: "Página Principal"
