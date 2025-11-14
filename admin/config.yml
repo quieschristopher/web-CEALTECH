@@ -1,28 +1,61 @@
 backend:
-  name: github
-  repo: quieschristopher/web-CEALTECH
+  name: git-gateway
   branch: main
-  auth_type: pkce
-  base_url: "https://cealtech.netlify.app/.netlify/functions"
 
-site_url: "https://cealtech.netlify.app"
-display_url: "https://cealtech.netlify.app"
-
-media_folder: "assets/img"
-public_folder: "/assets/img"
-
-media_library:
-  name: uploadcare
-  config:
-    publicKey: "demopublickey"
+media_folder: "productos/{{collection}}/{{slug}}"
+public_folder: "/productos/{{collection}}/{{slug}}"
 
 collections:
-  - name: "pagina_principal"
-    label: "Página Principal"
-    files:
-      - label: "Contenido Home"
-        name: "home"
-        file: "index.html"
-        fields:
-          - { label: "Título", name: "titulo", widget: "string" }
-          - { label: "Banner", name: "banner", widget: "image" }
+  - name: "gamer"
+    label: "Laptops Gamer"
+    folder: "productos/gamer"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index.md"
+    identifier_field: "title"
+    fields:
+      - { label: "Nombre", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string" }
+      - {
+          label: "Imagen principal",
+          name: "main_image",
+          widget: "image",
+          default: "{{slug}}.jpg"
+        }
+
+  - name: "oficina"
+    label: "Laptops de Oficina"
+    folder: "productos/oficina"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index.md"
+    identifier_field: "title"
+    fields:
+      - { label: "Nombre", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string" }
+      - {
+          label: "Imagen principal",
+          name: "main_image",
+          widget: "image",
+          default: "{{slug}}.jpg"
+        }
+
+  - name: "convertible"
+    label: "Laptops Convertibles"
+    folder: "productos/convertible"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index.md"
+    identifier_field: "title"
+    fields:
+      - { label: "Nombre", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Precio", name: "price", widget: "string" }
+      - {
+          label: "Imagen principal",
+          name: "main_image",
+          widget: "image",
+          default: "{{slug}}.jpg"
+        }
